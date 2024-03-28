@@ -2,13 +2,15 @@ server:
   port: 9090 #服务端口
 spring:
   datasource:
-    multi1: #数据源1
-      url: jdbc:mysql://localhost:3306/multi-1?useSSL=false&serverTimezone=Asia/Shanghai
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      username: test
-      password: test
-    multi2: #数据源2
-      url: jdbc:mysql://localhost:3306/multi-2?useSSL=false&serverTimezone=Asia/Shanghai
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      username: test
-      password: test
+    type: com.alibaba.druid.pool.DruidDataSource #配置数据源类型
+    druid: #前缀修改
+      multi1: #数据源1
+        url: jdbc:mysql://localhost:3306/multi-1?useSSL=false&serverTimezone=Asia/Shanghai
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: test
+        password: test
+      multi2: #数据源2
+        url: jdbc:mysql://localhost:3306/multi-2?useSSL=false&serverTimezone=Asia/Shanghai
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: test
+        password: test

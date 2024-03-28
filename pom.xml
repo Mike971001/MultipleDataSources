@@ -20,6 +20,15 @@
     </parent>
 
     <dependencies>
+        <!--
+        新增Druid数据源
+        参考：https://blog.csdn.net/weixin_43859729/article/details/112171048
+        -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.2.19</version>
+        </dependency>
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
