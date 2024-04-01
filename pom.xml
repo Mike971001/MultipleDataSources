@@ -20,6 +20,11 @@
     </parent>
 
     <dependencies>
+        <!--添加xml工具依赖-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
         <!--
         新增Druid数据源
         参考：https://blog.csdn.net/weixin_43859729/article/details/112171048

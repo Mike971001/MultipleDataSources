@@ -15,4 +15,28 @@ public interface TeacherService {
      * @return
      */
     List<Teacher> findAll();
+
+    /**
+     * 查询一个
+     * @param teacherId
+     * @return
+     */
+    Object findOne(Integer teacherId);
+
+    /**
+     * 查询Xml的List
+     * @return
+     */
+    String findXmlList();
+
+    /**
+     * 将查询到的列表输出到本地的文件目录
+     */
+    void getXmlFile();
+
+    /**
+     * 返回为xml的数据
+     * @return
+     */
+    String getCommonXml();
 }
