@@ -20,7 +20,7 @@
     </parent>
 
     <dependencies>
-        <!--添加xml工具依赖-->
+        <!--Jackson XML依赖 chatGpt3.5推荐使用-->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
